@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ad22121.css",
-    "main.js": "/static/js/main.b829e913.js",
-    "static/media/sajal2.jpg": "/static/media/sajal2.8d6b939125cb3d3ff7c9.jpg",
-    "index.html": "/index.html",
-    "main.9ad22121.css.map": "/static/css/main.9ad22121.css.map",
-    "main.b829e913.js.map": "/static/js/main.b829e913.js.map"
+    "main.css": "/Minimalist-portfolio/static/css/main.9ad22121.css",
+    "main.js": "/Minimalist-portfolio/static/js/main.de2759db.js",
+    "static/media/sajal2.jpg": "/Minimalist-portfolio/static/media/sajal2.8d6b939125cb3d3ff7c9.jpg",
+    "index.html": "/Minimalist-portfolio/index.html",
+    "main.9ad22121.css.map": "/Minimalist-portfolio/static/css/main.9ad22121.css.map",
+    "main.de2759db.js.map": "/Minimalist-portfolio/static/js/main.de2759db.js.map"
   },
   "entrypoints": [
     "static/css/main.9ad22121.css",
-    "static/js/main.b829e913.js"
+    "static/js/main.de2759db.js"
   ]
 }
