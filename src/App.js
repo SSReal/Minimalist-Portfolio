@@ -12,7 +12,7 @@ function App() {
   return (
     <Content>
       <SocialInfo>
-        <Section>
+        <Section className={"fixed-banner"}>
           <ProfilePic src = {pic} />
           <h1>SAJAL SINGHAL</h1> 
           {(tab === 0) && 
@@ -26,9 +26,9 @@ function App() {
         </Section>
         <SeperatorLine />
         <Section>
-            <a href="https://github.com/SSReal"><GitHubIcon style = {{fontSize: "3.5rem"}}/></a>
-            <a href="https://linkedin.com/in/sajalsinghal1"><LinkedInIcon style = {{fontSize: "3.5rem"}}/></a>
-            <a href="mailto:sajal.singhal1@gmail.com"><EmailIcon style = {{fontSize: "3.5rem"}}/></a>
+            <a href="https://github.com/SSReal"><GitHubIcon style = {iconStyle}/></a>
+            <a href="https://linkedin.com/in/sajalsinghal1"><LinkedInIcon style = {iconStyle}/></a>
+            <a href="mailto:sajal.singhal1@gmail.com"><EmailIcon style = {iconStyle}/></a>
         </Section>
       </SocialInfo>
       {(tab === 1)&&<Projects />}
@@ -38,14 +38,29 @@ function App() {
   );
 }
 
+const iconStyle = {
+  fontSize: "3rem"
+}
+
 const Content = styled.div`
   background-color: #070a14;
   color: whitesmoke;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
+  width: 100%;
+  min-height: max-content;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 const Section = styled.div`
@@ -55,6 +70,8 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-evenly;
   min-height: 30vh;
+  text-align: center;
+
   >a {
     color: inherit;
     text-decoration: none;
@@ -73,6 +90,7 @@ const SocialInfo = styled.div`
   flex-direction:row;
   align-items: center;
   justify-content: center;
+  margin-left: 5vw;
 `;
 
 const TabChangeButton = styled.button`
@@ -86,16 +104,12 @@ const TabChangeButton = styled.button`
 `;
 
 const ProfilePic = styled.img`
-  height: 25vh;
-  width: 25vh;
+  height: 25vw;
+  width: 25vw;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 50%;
 `;
-
-// const Projects = styled.div`
-//   background-color: white;
-//   min-width: 35rem;
-//   height: 100%;
-// `;
 
 const Skills = styled.div`
   background-color: red;

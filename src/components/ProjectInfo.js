@@ -2,7 +2,7 @@ import {useState} from "react";
 import styled from "styled-components"
 
 export default function ProjectInfo(props) {
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(true);
     const pressToggle = () => {
         if(toggle) {
             setToggle(false);
@@ -13,7 +13,7 @@ export default function ProjectInfo(props) {
     }
     return (
         <Project>
-            <h1 onClick = {pressToggle}>{props.info.name}</h1>
+            <h3 onClick = {pressToggle}>{"["+props.info.name+"]"}</h3>
             {
             (toggle) && 
             <HiddenInfo>
@@ -23,9 +23,8 @@ export default function ProjectInfo(props) {
                 {(props.info.githubLink && props.info.liveLink) && " | "}
                 {(props.info.liveLink) && <a href={props.info.liveLink} target = "_blank" rel = "noreferrer">Live Link</a>}
                 <br/>
-                <br/>
                 {
-                    props.info.description.map((desc)=><p style = {{fontSize: "0.75rem", lineHeight: 0.75}} key = {desc} >{desc}</p>)
+                    props.info.description.map((desc)=><p style = {{fontSize: "0.75rem", lineHeight: "1"}} key = {desc} >{desc}</p>)
                 }
                 <hr />
                 
@@ -37,7 +36,9 @@ export default function ProjectInfo(props) {
 }
 
 const Project = styled.div`
-    line-height: 0.5
+    min-width: 175px;
+    margin: 10px;
+    margin-right: 15vw;
 `;
 
 const HiddenInfo = styled.div`

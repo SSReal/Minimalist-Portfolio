@@ -1,4 +1,5 @@
 import ProjectInfo from "./ProjectInfo"
+import styled from "styled-components"
 
 const projects = [
     {
@@ -37,19 +38,63 @@ const projects = [
         ],
         githubLink: "https://github.com/SSReal/calctech-ss",
         liveLink: "https://calctech-ss.herokuapp.com/"
+    },
+    {
+        id: 23,
+        name: "Calctech",
+        date: "March-April 2021",
+        description: [
+            "Support for both integer and decimal calculations",
+            "Numbers with empty decimal places are truncated automatically"
+        ],
+        githubLink: "https://github.com/SSReal/calctech-ss",
+        liveLink: "https://calctech-ss.herokuapp.com/"
+    },
+    {
+        id: 233,
+        name: "Calctech",
+        date: "March-April 2021",
+        description: [
+            "Support for both integer and decimal calculations",
+            "Numbers with empty decimal places are truncated automatically"
+        ],
+        githubLink: "https://github.com/SSReal/calctech-ss",
+        liveLink: "https://calctech-ss.herokuapp.com/"
+    },
+    {
+        id: 2333,
+        name: "Calctech",
+        date: "March-April 2021",
+        description: [
+            "Support for both integer and decimal calculations",
+            "Numbers with empty decimal places are truncated automatically"
+        ],
+        githubLink: "https://github.com/SSReal/calctech-ss",
+        liveLink: "https://calctech-ss.herokuapp.com/"
     }
 ];
 
-const projectStyle = {
-    maxWidth: "55vw"
-}
 
 export default function Projects() {
     return(
-        <div style = {projectStyle}>
+        <ProjectDisplay>
+            <p className = {"grey-subtext"}> .. (scroll) ..</p>
             {
                 projects.map((project) => <ProjectInfo key={project.id} info = {project}/>)
-            }
-        </div>
+            } 
+        </ProjectDisplay>
     )
 }
+
+const ProjectDisplay = styled.div`
+    position: relative;
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 45vh;
+    max-width: 70vw;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    margin-right: 5vw;
+`;
