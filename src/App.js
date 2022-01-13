@@ -5,6 +5,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from '@material-ui/icons/Email';
 import { useState } from "react";
+import Projects from "./components/Projects";
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -14,14 +15,14 @@ function App() {
         <Section>
           <ProfilePic src = {pic} />
           <h1>SAJAL SINGHAL</h1> 
-          {(tab == 0) && 
+          {(tab === 0) && 
           <div style = {{display: "flex", fontSize:"1.5rem"}}>
             <TabChangeButton onClick = {() => {setTab(1)}}>Projects</TabChangeButton> |
             <TabChangeButton onClick = {() => {setTab(2)}}>Skills</TabChangeButton> |
             <TabChangeButton onClick = {() => {setTab(3)}}>Experience</TabChangeButton>
           </div>
           }
-          {(tab != 0) && <TabChangeButton onClick = {() => {setTab(0)}}>Hide Tab</TabChangeButton>}
+          {(tab !== 0) && <TabChangeButton onClick = {() => {setTab(0)}}>Hide Tab</TabChangeButton>}
         </Section>
         <SeperatorLine />
         <Section>
@@ -30,9 +31,9 @@ function App() {
             <a href="mailto:sajal.singhal1@gmail.com"><EmailIcon style = {{fontSize: "3.5rem"}}/></a>
         </Section>
       </SocialInfo>
-      {(tab == 1)&&<Projects />}
-      {(tab == 2)&&<Skills />}
-      {(tab == 3)&&<Experience />}
+      {(tab === 1)&&<Projects />}
+      {(tab === 2)&&<Skills />}
+      {(tab === 3)&&<Experience />}
     </Content>
   );
 }
@@ -48,6 +49,7 @@ const Content = styled.div`
 `;
 
 const Section = styled.div`
+  margin: 10px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -89,19 +91,20 @@ const ProfilePic = styled.img`
   border-radius: 50%;
 `;
 
-const Projects = styled.div`
-  background-color: white;
-  width: 100px;
-  height: 100px;
-`;
+// const Projects = styled.div`
+//   background-color: white;
+//   min-width: 35rem;
+//   height: 100%;
+// `;
+
 const Skills = styled.div`
   background-color: red;
   width: 100px;
-  height: 100px;
+  height: 100%;
 `;
 const Experience = styled.div`
   background-color: blue;
   width: 100px;
-  height: 100px;
+  height: 100%;
 `;
 export default App;
