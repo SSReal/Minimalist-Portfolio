@@ -6,6 +6,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from '@material-ui/icons/Email';
 import { useState } from "react";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -111,11 +112,12 @@ const ProfilePic = styled.img`
   border-radius: 50%;
 `;
 
-const Skills = styled.div`
-  background-color: red;
-  width: 100px;
-  height: 100%;
-`;
+// const Skills = styled.div`
+//   background-color: red;
+//   width: 100px;
+//   height: 100%;
+// `;
+
 const Experience = styled.div`
   background-color: blue;
   width: 100px;
