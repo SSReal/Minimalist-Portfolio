@@ -27,9 +27,9 @@ function App() {
         </Section>
         <SeperatorLine />
         <Section>
-            <a href="https://github.com/SSReal"><GitHubIcon style = {iconStyle}/></a>
-            <a href="https://linkedin.com/in/sajalsinghal1"><LinkedInIcon style = {iconStyle}/></a>
-            <a href="mailto:sajal.singhal1@gmail.com"><EmailIcon style = {iconStyle}/></a>
+            <a href="https://github.com/SSReal" target = "_blank"><GitHubIcon style = {iconStyle}/></a>
+            <a href="https://linkedin.com/in/sajalsinghal1" target = "_blank"><LinkedInIcon style = {iconStyle}/></a>
+            <a href="mailto:sajal.singhal1@gmail.com" target = "_blank"><EmailIcon style = {iconStyle}/></a>
         </Section>
       </SocialInfo>
       {(tab === 1)&&<Projects />}
