@@ -7,6 +7,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import { useState } from "react";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Achievements from "./components/Achievements";
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -27,9 +28,9 @@ function App() {
         </Section>
         <SeperatorLine />
         <Section>
-            <a href="https://github.com/SSReal" target = "_blank"><GitHubIcon style = {iconStyle}/></a>
-            <a href="https://linkedin.com/in/sajalsinghal1" target = "_blank"><LinkedInIcon style = {iconStyle}/></a>
-            <a href="mailto:sajal.singhal1@gmail.com" target = "_blank"><EmailIcon style = {iconStyle}/></a>
+            <a href="https://github.com/SSReal" target = "_blank" rel = "noreferrer"><GitHubIcon style = {iconStyle}/></a>
+            <a href="https://linkedin.com/in/sajalsinghal1" target = "_blank" rel = "noreferrer"><LinkedInIcon style = {iconStyle}/></a>
+            <a href="mailto:sajal.singhal1@gmail.com" target = "_blank" rel = "noreferrer"><EmailIcon style = {iconStyle}/></a>
         </Section>
       </SocialInfo>
       {(tab === 1)&&<Projects />}
@@ -112,9 +113,10 @@ const ProfilePic = styled.img`
   border-radius: 50%;
 `;
 
-const Achievements = styled.div`
-  background-color: blue;
-  width: 100px;
-  height: 100%;
-`;
+// const Achievements = styled.div`
+//   background-color: blue;
+//   width: 100px;
+//   height: 100%;
+// `;
+
 export default App;

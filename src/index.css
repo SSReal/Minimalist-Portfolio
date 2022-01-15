@@ -47,3 +47,8 @@ code {
   margin-left: 2vw;
 }
 
+.very-small {
+  font-size: 0.3em;
+  text-decoration: none;
+}
+
