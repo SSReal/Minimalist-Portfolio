@@ -112,12 +112,6 @@ const ProfilePic = styled.img`
   border-radius: 50%;
 `;
 
-// const Skills = styled.div`
-//   background-color: red;
-//   width: 100px;
-//   height: 100%;
-// `;
-
 const Experience = styled.div`
   background-color: blue;
   width: 100px;

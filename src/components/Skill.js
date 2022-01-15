@@ -31,7 +31,7 @@ const SkillSection = styled.div`
     min-width: 175px;
     margin: 10px;
     margin-right: 15vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 0.7;
     font-weight: 100;
 `;

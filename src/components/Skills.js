@@ -3,7 +3,7 @@ import Skill from "./Skill"
 
 const skills = [
     {
-        name: "JavaScript",
+        name: "JS",
         sub: ["React.js","Node.js","Express.js","Next.js"]
     },
     {
@@ -11,7 +11,7 @@ const skills = [
         sub: ["STL"]
     },
     {
-        name: "Python",
+        name: "Py",
         sub: ["Numpy","Pandas","Scipy","Tensorflow","Django"]
     }
 ];
