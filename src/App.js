@@ -20,7 +20,7 @@ function App() {
           <div style = {{display: "flex", fontSize:"1.5rem"}}>
             <TabChangeButton onClick = {() => {setTab(1)}}>Projects</TabChangeButton> |
             <TabChangeButton onClick = {() => {setTab(2)}}>Skills</TabChangeButton> |
-            <TabChangeButton onClick = {() => {setTab(3)}}>Experience</TabChangeButton>
+            <TabChangeButton onClick = {() => {setTab(3)}}>Achievements</TabChangeButton>
           </div>
           }
           {(tab !== 0) && <TabChangeButton onClick = {() => {setTab(0)}}>Hide Tab</TabChangeButton>}
@@ -34,7 +34,7 @@ function App() {
       </SocialInfo>
       {(tab === 1)&&<Projects />}
       {(tab === 2)&&<Skills />}
-      {(tab === 3)&&<Experience />}
+      {(tab === 3)&&<Achievements />}
     </Content>
   );
 }
@@ -112,7 +112,7 @@ const ProfilePic = styled.img`
   border-radius: 50%;
 `;
 
-const Experience = styled.div`
+const Achievements = styled.div`
   background-color: blue;
   width: 100px;
   height: 100%;
