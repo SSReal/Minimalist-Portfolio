@@ -12,7 +12,7 @@ const skills = [
     },
     {
         name: "Py",
-        sub: ["Numpy","Pandas","Scipy","Tensorflow","Django"]
+        sub: ["Numpy","Pandas","Scikit-learn","Tensorflow","Django"]
     }
 ];
 
