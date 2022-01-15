@@ -1,5 +1,5 @@
 # Minimalist Portfolio
-This is a minimalist template for a portfolio site, created using React, Material UI and Styled-Components
+This is a minimalist portfolio site, created using React, Material UI and Styled-Components
 
 ## Layout
 In the center, there is a social links section, in which the github profile, linkedin, and email links are placed, along with the name and photo
