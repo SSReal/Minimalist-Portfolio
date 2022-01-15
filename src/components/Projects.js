@@ -39,39 +39,6 @@ const projects = [
         githubLink: "https://github.com/SSReal/calctech-ss",
         liveLink: "https://calctech-ss.herokuapp.com/"
     },
-    {
-        id: 23,
-        name: "Calctech",
-        date: "March-April 2021",
-        description: [
-            "Support for both integer and decimal calculations",
-            "Numbers with empty decimal places are truncated automatically"
-        ],
-        githubLink: "https://github.com/SSReal/calctech-ss",
-        liveLink: "https://calctech-ss.herokuapp.com/"
-    },
-    {
-        id: 233,
-        name: "Calctech",
-        date: "March-April 2021",
-        description: [
-            "Support for both integer and decimal calculations",
-            "Numbers with empty decimal places are truncated automatically"
-        ],
-        githubLink: "https://github.com/SSReal/calctech-ss",
-        liveLink: "https://calctech-ss.herokuapp.com/"
-    },
-    {
-        id: 2333,
-        name: "Calctech",
-        date: "March-April 2021",
-        description: [
-            "Support for both integer and decimal calculations",
-            "Numbers with empty decimal places are truncated automatically"
-        ],
-        githubLink: "https://github.com/SSReal/calctech-ss",
-        liveLink: "https://calctech-ss.herokuapp.com/"
-    }
 ];
 
 
