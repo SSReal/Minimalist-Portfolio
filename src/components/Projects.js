@@ -3,6 +3,19 @@ import styled from "styled-components"
 
 const projects = [
     {
+        id: 3,
+        name: "Chat-App-Backend",
+        date: "March 2022",
+        description: [
+            "Support for users, pages, and views",
+            "Each user can have several pages",
+            "Each page can have several views",
+            "Each view can have a separate password, and can be abstracted by any application to include data"
+        ],
+        githubLink: "https://github.com/SSReal/chat-app-backend",
+        liveLink: null
+    },
+    {
         id: 0,
         name: "Me-Site",
         date: "May-June 2021",
@@ -38,7 +51,7 @@ const projects = [
         ],
         githubLink: "https://github.com/SSReal/calctech-ss",
         liveLink: "https://calctech-ss.herokuapp.com/"
-    },
+    }
 ];
 
 
