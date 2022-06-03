@@ -13,6 +13,10 @@ const skills = [
     {
         name: "Py",
         sub: ["Numpy","Pandas","Scikit-learn","Tensorflow","Django"]
+    },
+    {
+        name: "Flutter",
+        sub: []
     }
 ];
 
