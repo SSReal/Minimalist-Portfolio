@@ -4,11 +4,15 @@ import Skill from "./Skill"
 const skills = [
     {
         name: "JS",
-        sub: ["React.js","Node.js","Express.js","Next.js"]
+        sub: ["React.js","Node.js","Express.js","Next.js", "Redux"]
+    },
+    {
+        name: "TS",
+        sub: ["Experience working in Back-End and Front-End"]
     },
     {
         name: "C++",
-        sub: ["STL"]
+        sub: ["STL", "Competitive Programming"]
     },
     {
         name: "Py",
@@ -16,7 +20,7 @@ const skills = [
     },
     {
         name: "Flutter",
-        sub: []
+        sub: ["Material Widgets", "Flutter Bloc"]
     }
 ];
 

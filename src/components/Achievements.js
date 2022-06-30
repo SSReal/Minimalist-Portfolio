@@ -3,6 +3,14 @@ import Achievement from "./Achievement"
 
 const achs = [
     {
+        rank: 29,
+        description: "All India Rank in Amazon HackOn 2022 Second Round ( Team semicolon;) )",
+    },
+    {
+        rank: 3427,
+        description: "Global Rank in Google Hash Code '22, with a total score of over 1 Million"
+    },
+    {
         rank: 1145,
         description: "AIR and 3945 Global Rank in Google Hash Code '21, with a total score of over 7.9 Million"
     },
